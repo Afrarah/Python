@@ -1,8 +1,6 @@
- #Afra aysha abdul rahman
 
 
 # This program gets the user's information and print it into a message.
-
 
 # this greets the user to the program
 print ( ' This program will display a message .' )
