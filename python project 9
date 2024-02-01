@@ -1,0 +1,24 @@
+# This program lets users know the pounds of a fruit they enter
+
+print()
+print('This program will let you create a list of fruits and how many')
+print('pounds there are of each and then display them back to you.')
+print('When you are done please press return without entering a fruit.')
+
+# Inputting the code
+fruits = []  # Corrected variable name from fruit to fruits
+while True:
+    fruit = input('Please enter a type of fruit: ')
+    weight = input('Please enter the weight of the fruit in pounds: ')
+    fruits.append('{}, {} lbs'.format(fruit, weight))  # Corrected format and variable name
+    action = input('When you are done please press return without entering a fruit. [Return]?').lower()
+    if action == 'return':
+        break
+
+print('The Fruit list: ')
+for fruit in sorted(fruits):
+    print(fruit)
+
+# Greets the user goodbye
+print()
+print('Have a nice day')
