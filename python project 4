@@ -1,0 +1,27 @@
+# introduction to what this program does
+print (" This program will allow you to enter two integer values than show you all possible answers")
+print (" Please enter only whole number")
+
+# This asks the user to input their 2 numbers 
+num1 = int(input (" Please enter the first number :"))
+num2 = int(input (" Please enter the second number : "))
+
+# This will provide the answer
+result = num1 + num2
+print(num1 ,"+" ,num2,  "=" , result)
+result = num1 - num2
+print(num1 , "-" , num2, "=" , result)
+result = num1 * num2
+print(num1 , "*" , num2, "=" , result)
+result = num1 / num2
+print(num1, "/" , num2, "=" , result)
+result = num1 // num2
+print(num1, "//", num2, "=" , result)
+result = num1 % num2
+print(num1 , "%", num2, "=" , result )
+result = num1 ** num2
+print(num1 , "**", num2 , "=" , result)
+
+# Greets the user goodbye
+
+print(" Have a great day")
