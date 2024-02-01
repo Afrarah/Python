@@ -1,0 +1,24 @@
+# program greeting
+print('This program will calculate the cost of gasoline for a trip')
+print('You will need to know your cars MPG, what you paid for a gallon')
+print('of gas, and the distance in miles you traveled.')
+
+# This gets the users information
+
+distance_Miles = float(input('\nPlease enter the distance traveled in miles : '))
+gallon_Miles = float(input('Enter the miles per gallon for this trip: '))
+cost_Gallon = float(input('Enter the cost per gallon paid: '))
+
+# This procces the users info
+
+answer = (distance_Miles) / (gallon_Miles) * (cost_Gallon)
+
+
+# This gives the user there results
+print()
+print(" The cost of this trip is/was : $ ", answer , end='\n\n')
+                 
+# This greets the user goodbye
+
+print()
+print(" Have a nice day!!!! ")
