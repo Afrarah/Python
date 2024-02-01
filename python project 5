@@ -1,0 +1,19 @@
+# this introduces the user to the program
+print("This program will convert degrees Celsius to degrees Fahrenheit")
+print()
+print()
+print("Please enter the temperature in degrees Celsius; you may use decimals ")
+print()
+
+# this gets the users input
+celsius = float(input ("Enter a temperature in degrees Celsius: "))
+print()
+
+# converts the celsius to fahrenheit
+fahrenheit = (celsius) * (9/5) + 32
+
+print(celsius, " degrees Celsius is equal to ", fahrenheit, " degrees Fahrenheit")
+print()
+
+# This greets the user goodbye
+print( "Have a great day !")
