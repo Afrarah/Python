@@ -1,0 +1,56 @@
+# This program converts different kinds of units
+
+# introduction to the program
+print()
+print('This program will convert inches to centimeters, centimeters to inches,')
+print('grams to ounces, kilometers to miles, or miles to kilometers')
+
+# telling the user to input
+print("Enter I to convert Inches to Centimeters.")
+print("Enter C to convert Centimeters to Inches.")
+print("Enter O to convert Ounces to Grams.")
+print("Enter G to convert Grams to Ounces.")
+print("Enter M to convert Miles to Kilometers.")
+print("Enter K to convert Kilometers to Miles.")
+
+# set value for the loop
+runAgain = 'y'
+
+# The start of the loop
+while runAgain == 'y':
+    choice = input('Enter the type of conversion you would like to do: ')
+
+    # conversion
+    # Ounces to Grams
+    if choice == 'O':
+        O = float(input("Enter Ounces: "))
+        print(O, " ounces is equal to ", O * 28.3495231, " grams")
+    # Grams to Ounces
+    elif choice == 'G':
+        G = float(input("Enter Grams: "))
+        print(G, " grams is equal to ", G / 28.3495231, " ounces")
+    # Inches to Centimeters
+    elif choice == 'I':
+        I = float(input("Enter Inches: "))
+        print(I, " inches is equal to ", I * 2.54, " centimeters")
+    # Centimeters to Inches
+    elif choice == 'C':
+        C = float(input("Enter Centimeters: "))
+        print(C, " centimeters is equal to ", C / 2.54, " inches")
+    # Miles to Kilometers
+    elif choice == 'M':
+        M = float(input("Enter Miles: "))
+        print(M, " miles is equal to ", M * 1.609344, " kilometers")
+    # Kilometers to Miles
+    elif choice == 'K':
+        K = float(input("Enter Kilometers: "))
+        print(K, " Kilometers is equal to ", K / 1.609344, " miles")
+
+    # asking if the user wants to make another conversion
+    loop = input('Would you like to make another conversion? (yes or no)').lower()
+
+    if loop == 'no':
+        runAgain = False
+
+# Print a goodbye message
+print("Have a nice day!")
