@@ -1,0 +1,53 @@
+# Function to display the user greeting
+def displayWelcome():
+    print("This program will convert degrees Celsius to degrees Fahrenheit")
+    print()
+    print()
+    print("Please enter the temperature in degrees Celsius; you may use decimals ")
+    print()
+
+# Function to get the user input for conversion type
+def getConvert():
+    convertType = input("Enter 'f' to convert to Fahrenheit: ").lower()
+    while convertType != 'f':
+        convertType = input("INPUT ERROR: Please enter 'f' to convert to Fahrenheit: ").lower()
+    return convertType
+
+# Function to convert Celsius to Fahrenheit and display the result
+def displayCelsiustoFahrenheit(celsius):
+    fahrenheit = celsius * (9/5) + 32
+    print(celsius, " degrees Celsius is equal to ", fahrenheit, " degrees Fahrenheit")
+    print()
+
+# Function to ask the user if they want to run the program again
+def runAgain():
+    again = input('Would you like to run the program again? (y/n): ').lower()
+    while again not in ('y', 'n'):
+        again = input('INPUT ERROR: Please enter "y" or "n": ').lower()
+
+    return again == 'y'
+
+# Greets the user goodbye
+def goodbye():
+    print("Have a great day!")
+
+# Main program loop
+runMain = True
+while runMain:
+    # Display the user greeting
+    displayWelcome()
+
+    # User conversion type
+    whichMain = getConvert()
+
+    # Get the temperature for the conversion
+    tempStart = float(input('Please enter the temperature in degrees Celsius; you may use decimals: '))
+
+    if whichMain == 'f':
+        displayCelsiustoFahrenheit(tempStart)
+
+    # Asking the user if they want to run again
+    runMain = runAgain()
+
+# Greet the user goodbye
+goodbye()
