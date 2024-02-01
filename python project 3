@@ -1,0 +1,23 @@
+# This program will show you how a integer and exponent will work
+
+# this greets the user to the program
+print( " Welcome to the Integer and Exponent program " )
+print()
+
+# This gets the users input
+firstNumber = input( 'What base?' ':' )
+secondNumber = int(input( 'What power of ' + firstNumber + ':' ))
+
+# changing the first number from string to interger
+firstNumber = int( firstNumber )
+
+# raising to the power of 10
+answer = firstNumber ** secondNumber
+
+# show the results
+print()
+print(firstNumber, ' to the power of ' , secondNumber, ' is ' , answer)
+
+# greets the user goodbye 
+
+print( " Have a nice day ! " )
