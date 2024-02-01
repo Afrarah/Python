@@ -1,0 +1,30 @@
+# This program will display the prowers of 2 ,( from 1 to 8 )
+
+# This greets the user to program
+print( 'Welcome to the powers of 2 program.' )
+print()
+
+# Using the power of 2
+firstAnswer = 2**1
+secondAnswer = 2**2
+thirdAnswer = 2**3
+fourthAnswer = 2**4
+fifthAnswer = 2**5
+sixithAnswer = 2**6
+seventhAnswer = 2**7
+eighthAnswer = 2**8
+
+# Finiding the Answer
+print( ' 2 raised to the power of 1 equals ' ,firstAnswer )
+print( ' 2 raised to the power of 2 equals ' ,secondAnswer )
+print( ' 2 raised to the power of 3 equals ' ,thirdAnswer )
+print( ' 2 raised to the power of 4 equals ' ,fourthAnswer )
+print( ' 2 raised to the power of 5 equals ' ,fifthAnswer )
+print( ' 2 raised to the power of 6 equals ' ,sixithAnswer )
+print( ' 2 raised to the power of 7 equals ' ,seventhAnswer )
+print( ' 2 raised to the power of 8 equals ' ,eighthAnswer )
+print()
+
+# Greeting the user goodbye
+print ( " Have a nice day! " )
+
