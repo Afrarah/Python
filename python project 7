@@ -1,0 +1,20 @@
+ This greets the user to the program 
+print("Please enter an A, B, or C to display a particular sentence.")
+print("Use capital letters.")
+
+# This gets the user's input
+print()
+answer = input("Please enter A, B, or C: ")
+
+# This processes the information 
+print()
+if answer == 'A':
+    print("You got an Apple!!")
+elif answer == 'B':
+    print("You got a Banana!!")
+elif answer == 'C':
+    print("You got a Coconut!!")
+
+# This greets the user goodbye
+print()
+print("Have a nice day!!")
